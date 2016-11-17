@@ -1,0 +1,103 @@
+body,html{
+    height: 100%;
+    display: block;
+}
+
+body.game-body {
+    overflow: hidden;
+    position: relative;
+}
+
+.game-container {
+    width: 100%;
+    height: 100%;
+    background-color: #c2f3ff;
+    position: relative;
+}
+.game-track{
+        background-color: #3e404a;
+        background-image: 
+        -webkit-linear-gradient(rgba(255,255,255,.00) 2px, transparent 2px),
+         linear-gradient(90deg, rgba(255,255,255,.04) 2px, transparent 2px),
+          linear-gradient(rgba(255,255,255,.03) 1px, transparent 1px),
+           linear-gradient(90deg, rgba(255,255,255,.03) 1px, transparent 1px),
+            linear-gradient(0deg, rgba(0,0,0,.3) 0, transparent 100px);
+        /* background-color: #3e404a; */
+        width: 300px;
+        margin: 0 auto;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        /* border: 5px dashed rgba(0, 0, 255, 0.37); */
+        border-top: 0;
+        margin-left: -150px;
+        border-bottom: 0;
+        background-size: 100px 100px, 60px 100px, 20px 20px, 20px 20px, 100% 100%;
+        background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px, center bottom;
+}
+.vehicle {
+    height: 50px;
+    width: 50px;
+    background-color: #1c94c4;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+.game-car{
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -32px;
+    /* border: 1px solid black; */
+    /* background: red; */
+    background-image: url(car.png);
+}
+
+.game-car.villan {
+    -webkit-filter: grayscale(100%);
+}
+
+.game-car.tl{
+
+background-position: -63px -74px;
+}
+.game-car.t{
+
+background-position: -80px -12px;
+
+width: 32px;
+
+margin-left: -16px;
+}
+.game-car.tr{
+
+background-position: -3px -74px;
+}
+.game-car.b{
+
+background-position: -80px -12px;
+}
+.game-car.bl{
+
+background-position: -80px -12px;
+}
+.game-car.br{
+
+background-position: -80px -12px;
+}
+.game-car.r{
+
+background-position: -80px -12px;
+}
+.game-car.l{
+    
+background-position: -80px -12px;
+}
+
+.game-car.t.villan{
+    margin-left:-1px;
+}
